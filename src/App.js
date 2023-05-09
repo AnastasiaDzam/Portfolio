@@ -16,10 +16,12 @@ function App() {
       <HashRouter>
         <ScrollToTop/>
         <Navbar />
-        <Route path= "/" element= {<Home />}/>
-        <Route path= "/projects" element= {<Projects />}/>
-        <Route path= "/contacts" element= {<Contacts />}/>
-        <Route path= "/project/:id" element= {<Project />}/>
+        <Routes>
+          <Route path= "/" element= {<Home />}/>
+          <Route path= "/projects" element= {<Projects />}/>
+          <Route path= "/contacts" element= {<Contacts />}/>
+          <Route path= "/project/:id" element= {<Project />}/>
+        </Routes>
         <Footer />
       </HashRouter>
     </div>
